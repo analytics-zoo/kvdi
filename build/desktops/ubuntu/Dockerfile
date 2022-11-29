@@ -46,8 +46,8 @@ RUN export http_proxy="http://child-prc.intel.com:913/" && \
     sudo echo "alias pycharm='/usr/local/share/pycharm/bin/pycharm.sh'" >> /etc/bash.bashrc && \
     sudo echo "alias setp='export http_proxy=http://child-prc.intel.com:913 && export https_proxy=http://child-prc.intel.com:913'" >>  /etc/bash.bashrc && \
     sudo echo "alias setp='export http_proxy=http://child-prc.intel.com:913 && export https_proxy=http://child-prc.intel.com:913'" >>  /etc/profile && \
-    sudo echo "unsetp='unset http_proxy && unset https_proxy'" >>  /etc/bash.bashrc && \
-    sudo echo "unsetp='unset http_proxy && unset https_proxy'" >>  /etc/profile && \
+    sudo echo "alias unsetp='unset http_proxy && unset https_proxy'" >>  /etc/bash.bashrc && \
+    sudo echo "alias unsetp='unset http_proxy && unset https_proxy'" >>  /etc/profile && \
     /bin/bash -c "source /etc/profile" && \
     /bin/bash -c "source /etc/bash.bashrc"
 
